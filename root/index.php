@@ -8,8 +8,7 @@
   <body>
     <div id="center">
       <div id="nav">
-        <div id="nav">
-          <ul>
+        <ul>
 
 <?php
 
@@ -40,8 +39,7 @@ foreach ($domains as $site => $domain) {
 }
 
 ?>
-          </ul>
-        </div>
+        </ul>
       </div>
       <div id="content">
         <h1>Andrew Rasmussen</h1>
