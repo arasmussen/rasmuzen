@@ -5,29 +5,34 @@
 }
 
 #nav {
-  width: 150px;
   float: left;
+  width: 150px;
 }
 
 #nav ul li {
-  background: #ddd;
-  border: 1px solid #aaa;
+  background: #cdf;
+  border: 1px solid #777;
   border-radius: 5px;
   float: left;
   height: 30px;
+  margin-top: 2px;
   padding-top: 12px;
   text-align: center;
   width: 148px;
 }
 
 #nav ul li a {
-  color: #888;
+  color: #000;
   display: inline-block;
   text-decoration: none;
 }
 
 #nav ul li a:hover {
-  color: #222;
+  color: #fff;
+}
+
+#nav ul li a span.navSite {
+  font: 12px verdana;
 }
 
 #nav ul li img.navImg {
@@ -42,16 +47,12 @@
 }
 
 #content h1 {
-  font-size: 20px;
+  font: 18px verdana;
   margin-bottom: 10px;
 }
 
-#content h2 {
-  font-size: 18px;
-  font-weight: normal;
-}
-
 #content ul li {
+  font: 12px verdana;
   list-style-type: disc;
   margin-left: 20px;
 }
