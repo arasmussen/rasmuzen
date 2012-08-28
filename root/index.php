@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
   <head>
+ohai
     <title>Andrew Rasmussen</title>
     <link rel="stylesheet" href="/reset.css" />
     <link rel="stylesheet" href="/styles.css" />
