@@ -41,7 +41,7 @@ $profiles = array(
 foreach ($domains as $site => $domain) {
   echo '<li>';
   echo   '<a href="' . $domain . $profiles[$site] . '">';
-  echo     '<img class="navImg" src="' . $domain . '/favicon.ico" />';
+  echo     '<img class="navImg" src="' . $domain . '/favicon.ico" alt="' . $site . ' icon" />';
   echo     '<span class="navSite">' . $site . '</span>';
   echo   '</a>';
   echo '</li>';
