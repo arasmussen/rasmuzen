@@ -51,6 +51,7 @@ foreach ($domains as $site => $domain) {
       </div>
       <div id="content">
         <h1>Andrew Rasmussen</h1>
+        <h2>arasmussen (at) katworks (dot) com</h2>
         <ul>
           <li>Originally from Seattle, WA</li>
           <li>Currently in the third year of undergraduate studies at the University of Waterloo in Waterloo, Ontario, Canada</li>

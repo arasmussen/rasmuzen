@@ -48,6 +48,10 @@
 
 #content h1 {
   font: 18px verdana;
+}
+
+#content h2 {
+  font: 12px verdana;
   margin-bottom: 10px;
 }
 
