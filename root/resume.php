@@ -132,7 +132,7 @@
         <div id="title">
           <h1>Andrew Rasmussen</h1>
           <p>3B Software Engineering - University of Waterloo</p>
-          <p>arasmussen@katworks.com</p>
+          <p>arasmussen (at) katworks (dot) com</p>
         </div>
       </div>
       <div id="skills" class="section">
