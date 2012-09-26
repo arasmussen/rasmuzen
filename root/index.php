@@ -37,11 +37,19 @@ $profiles = array(
   'github' => '/arasmussen',
   'resume' => '/resume.php'
 );
+$icons = array(
+  'facebook' => '/img/icons/facebook.png',
+  'stackoverflow' => '/img/icons/stackoverflow.png',
+  'linkedin' => '/img/icons/linkedin.png',
+  'twitter' => '/img/icons/twitter.png',
+  'github' => '/img/icons/github.png',
+  'resume' => ' /img/icons/rasmuzen.png'
+);
 
 foreach ($domains as $site => $domain) {
   echo '<li>';
   echo   '<a href="' . $domain . $profiles[$site] . '">';
-  echo     '<img class="navImg" src="' . $domain . '/favicon.ico" alt="' . $site . ' icon" />';
+  echo     '<img class="navImg" src="' . $icons[$site] . '" alt="' . $site . ' icon" />';
   echo     '<span class="navSite">' . $site . '</span>';
   echo   '</a>';
   echo '</li>';

@@ -251,7 +251,7 @@
                 <li>Applications with a PHP/MySQL backend and careful, secure, graphical interface to the database</li>
               </ul>
             </li>
-            <li><h3>Stack Overflow: </h3>Over 130 answers, have a reputation in the top 12% of users; mostly from answering C++/OpenGL questions</li>
+            <li><h3>Stack Overflow: </h3>Over 180 answers, have a reputation in the top 9% of users; mostly from answering C++/OpenGL questions</li>
             <li><h3>Project Euler: </h3>Completion of the dozens of challenges on this programming challenge/contest site for fun</li>
             <li><h3>UW/Google AI Challenge: </h3>Participation in two Google sponsored, UW hosted, AI programming competitions. Overall ranking in both challenges were in the top quartile. Competition subjects include Rock Paper Scissors and Tron.</li>
           </ul>
