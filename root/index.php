@@ -2,8 +2,8 @@
 <html>
   <head>
     <title>Andrew Rasmussen</title>
-    <link rel="stylesheet" href="/reset.css" />
-    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-34368328-1']);
