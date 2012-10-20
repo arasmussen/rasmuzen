@@ -28,8 +28,12 @@
   </head>
   <body>
     <div id="center">
-      <div id="nav">
-        <ul>
+      <div id="left">
+        <div id="profile">
+          <img src="/img/andrew.png" alt="andrew" />
+        </div>
+        <div id="nav">
+          <ul>
 <?php
 
 $domains = array(
@@ -66,7 +70,8 @@ foreach ($domains as $site => $domain) {
   echo '</li>';
 }
 ?>
-        </ul>
+          </ul>
+        </div>
       </div>
       <div id="content">
         <h1>Andrew Rasmussen</h1>
@@ -107,18 +112,27 @@ foreach ($domains as $site => $domain) {
                 <li><a href="#tab2">Chess AI Site</a></li>
                 <li><a href="#tab3">3D OpenGL Demo</a></li>
                 <li><a href="#tab4">Tri Grid Viewer</a></li>
+                <li><a href="#tab5">Rasmuzen</a></li>
               </ul>
               <div id="tab1">
+                <p>I single-handedly developed and launched Tungsten Property's <a href="http://www.tungstenproperty.com">current site</a> using ec2/LAMP. I still maintain the site and work on new features when I have time to.</p>
                 <img src="/img/tungsten.png" alt="tungsten" />
               </div>
               <div id="tab2">
+                <p>I'm currently working on a website which would allow users to upload their chess algorithm to see how it does against other users' chess algorithms and watch the games live online. The website is written in PHP using CodeIgniter and the service running the algorithms is written in C++. PHP scripts communicate with the C++ service via Thrift.</p>
                 <img src="/img/chess.png" alt="chess" />
               </div>
               <div id="tab3">
+                <p>Having played a ton of video games as a kid, I got a pretty deep interest in computer graphics when I got to school. I tried using game engines such as OGRE and Unity but ended up finding it much more interesting to work directly with OpenGL. The project shown lets the user, a beautiful cube, walk around a heightmap terrain with all the associated physics/collision detection. Written from scratch using C++ and modern OpenGL with shaders.</p>
                 <img src="/img/graphics.jpg" alt="graphics" />
               </div>
               <div id="tab4">
+                <p>This project is super small, but was a really fun take-home interview assignment! As you can see from the image below, I can easily enjoy blowing a lot of time using this app.</p>
                 <img src="/img/trigrid.png" alt="trigrid" />
+              </div>
+              <div id="tab5">
+                <p>Rasmuzen is this actual site that you're on right now. I enjoy creating an online identity for myself by keeping a graphical collection of my past/current projects and providing links to many other websites that I spend a lot of time on.</p>
+                <p>As you can see it's not the prettiest right now and still has a long way to go!</p>
               </div>
             </div>
           </div>

@@ -4,8 +4,20 @@
   width: 1000px;
 }
 
-#nav {
+#left {
+  width: 150px;
   float: left;
+}
+
+#profile {
+  width: 150px;
+}
+
+#profile img {
+  width: 150px;
+}
+
+#nav {
   width: 150px;
 }
 
