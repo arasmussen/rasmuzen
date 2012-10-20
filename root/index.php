@@ -116,7 +116,7 @@ foreach ($domains as $site => $domain) {
               </ul>
               <div id="tab1">
                 <p>I single-handedly developed and launched Tungsten Property's <a href="http://www.tungstenproperty.com">current site</a> using ec2/LAMP. I still maintain the site and work on new features when I have time to.</p>
-                <img src="/img/tungsten.png" alt="tungsten" />
+                <a href="http://www.tungstenproperty.com"><img src="/img/tungsten.png" alt="tungsten" /></a>
               </div>
               <div id="tab2">
                 <p>I'm currently working on a website which would allow users to upload their chess algorithm to see how it does against other users' chess algorithms and watch the games live online. The website is written in PHP using CodeIgniter and the service running the algorithms is written in C++. PHP scripts communicate with the C++ service via Thrift.</p>
@@ -128,7 +128,8 @@ foreach ($domains as $site => $domain) {
               </div>
               <div id="tab4">
                 <p>This project is super small, but was a really fun take-home interview assignment! As you can see from the image below, I can easily enjoy blowing a lot of time using this app.</p>
-                <img src="/img/trigrid.png" alt="trigrid" />
+                <p>Try it out <a href="http://trigrid.rasmuzen.com">here</a>!</p>
+                <a href="http://trigrid.rasmuzen.com"><img src="/img/trigrid.png" alt="trigrid" /></a>
               </div>
               <div id="tab5">
                 <p>Rasmuzen is this actual site that you're on right now. I enjoy creating an online identity for myself by keeping a graphical collection of my past/current projects and providing links to many other websites that I spend a lot of time on.</p>
