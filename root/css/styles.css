@@ -1,7 +1,7 @@
 #center {
   margin: 0 auto;
   padding: 20px;
-  width: 800px;
+  width: 1000px;
 }
 
 #nav {
@@ -43,7 +43,7 @@
 #content {
   float: right;
   padding: 0 20px;
-  width: 610px;
+  width: 810px;
 }
 
 #content h1 {
@@ -55,10 +55,24 @@
   margin-bottom: 10px;
 }
 
+#content ul {
+  margin-bottom: 10px;
+}
+
 #content ul li {
   font: 12px verdana;
   list-style-type: disc;
   margin-left: 20px;
+  margin-top: 5px;
+}
+
+#content #tabs ul li {
+  list-style-type: none;
+  margin-left: 1px;
+}
+
+#content ul li img {
+  margin-top: 2px;
 }
 
 #content ul li li {

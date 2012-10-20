@@ -4,6 +4,17 @@
     <title>Andrew Rasmussen</title>
     <link rel="stylesheet" href="/css/reset.css" />
     <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/smoothness/jquery-ui-1.9.0.custom.min.css" />
+    <script src="/js/jquery-1.8.2.js"></script>
+    <script src="/js/jquery-ui-1.9.0.custom.min.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        $('#accordion').accordion({
+          heightStyle: "content"
+        });
+        $('#tabs').tabs();
+      });
+    </script>
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-34368328-1']);
@@ -60,10 +71,22 @@ foreach ($domains as $site => $domain) {
       <div id="content">
         <h1>Andrew Rasmussen</h1>
         <h2>arasmussen (at) katworks (dot) com</h2>
-        <ul>
-          <li>Originally from Seattle, WA</li>
-          <li>Currently in the third year of undergraduate studies at the University of Waterloo in Waterloo, Ontario, Canada</li>
-          <li>Have had six software development internships for:
+        <div id="accordion">
+          <h3>About me</h3>
+          <div>
+            <ul>
+              <li>Originally from Seattle, WA</li>
+              <li>21 years old</li>
+              <li>Currently in my 4th year of my Bachelor of Software Engineering at the University of Waterloo in Ontario, Canada</li>
+              <li>I love side projects and have a hard time working on one without thinking about a business model</li>
+              <li>I'm currently looking for a software engineering internship at an earlier stage startup in the Bay Area, New York City, Seattle, or Boston</li>
+              <li>I've lived in San Diego CA, Mountain View CA, Seattle WA, New York NY, Waterloo ON, and London ON</li>
+              <li>Right now I'm working on a website that will let people create chess algorithms and compete with other algorithms</li>
+            </ul>
+          </div>
+          <h3>Work experience</h3>
+          <div>
+            <p>I've had six software development internships</p>
             <ul>
               <li>Facebook (Menlo Park, CA): May-Aug 2012</li>
               <li>Digital Extremes (London, ON): Sep-Dec 2011</li>
@@ -71,8 +94,35 @@ foreach ($domains as $site => $domain) {
               <li>Qualcomm (San Diego, CA): May-Aug 2010</li>
               <li>Microsoft (Seattle, WA): Jun-Aug 2008, Jun-Aug 2009</li>
             </ul>
-          </li>
-        </ul>
+            <p>I've done some consulting too!</p>
+            <ul>
+              <li>Tungsten Property (New York, NY): Dec 2011 to current</li>
+            </ul>
+          </div>
+          <h3>Stuff I've built</h3>
+          <div>
+            <div id="tabs">
+              <ul>
+                <li><a href="#tab1">Tungsten Property</a></li>
+                <li><a href="#tab2">Chess AI Site</a></li>
+                <li><a href="#tab3">3D OpenGL Demo</a></li>
+                <li><a href="#tab4">Tri Grid Viewer</a></li>
+              </ul>
+              <div id="tab1">
+                <img src="/img/tungsten.png" alt="tungsten" />
+              </div>
+              <div id="tab2">
+                <img src="/img/chess.png" alt="chess" />
+              </div>
+              <div id="tab3">
+                <img src="/img/graphics.jpg" alt="graphics" />
+              </div>
+              <div id="tab4">
+                <img src="/img/trigrid.png" alt="trigrid" />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div id="footer">
       </div>
