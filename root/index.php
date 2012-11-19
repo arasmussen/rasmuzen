@@ -9,7 +9,7 @@
               <li>21 years old</li>
               <li>Currently in my 4th year of my Bachelor of Software Engineering at the University of Waterloo in Ontario, Canada</li>
               <li>I love side projects and have a hard time working on one without thinking about a business model</li>
-              <li>I'm currently looking for a software engineering internship at an earlier stage startup in the Bay Area, New York City, Seattle, or Boston</li>
+              <li>I'm currently looking for a software engineering internship at an earlier stage startup in the Bay Area, New York City, or Seattle</li>
               <li>I've lived in San Diego CA, Mountain View CA, Seattle WA, New York NY, Waterloo ON, and London ON</li>
               <li>Right now I'm working on a website that will let people create chess algorithms and compete against other algorithms</li>
             </ul>
