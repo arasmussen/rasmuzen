@@ -1,67 +1,99 @@
 <?php require_once('../views/header.php'); ?>
-        <h1>Andrew Rasmussen</h1>
-        <h2>arasmussen (at) katworks (dot) com</h2>
-        <div id="accordion">
-          <h3>About me</h3>
-          <div>
+        <div id="top">
+          <h1>Andrew Rasmussen</h1>
+          <a href="mailto:andrew@venz.io">andrew@venz.io</a>
+          <a href="http://www.rasmuzen.com/resume.php">resume</a>
+        </div>
+        <div id="bottom">
+          <div id="about-me">
+            <h2>About Me</h2>
             <ul>
-              <li>Originally from Seattle, WA</li>
-              <li>21 years old</li>
-              <li>Currently in my 4th year of my Bachelor of Software Engineering at the University of Waterloo in Ontario, Canada</li>
-              <li>I love side projects and have a hard time working on one without thinking about a business model</li>
-              <li>I'm currently looking for a software engineering internship at an earlier stage startup in the Bay Area, New York City, or Seattle</li>
-              <li>I've lived in San Diego CA, Mountain View CA, Seattle WA, New York NY, Waterloo ON, and London ON</li>
-              <li>Right now I'm working on a website that will let people create chess algorithms and compete against other algorithms</li>
+              <li>I'm currently interning on the iOS Mobile Core team at <a href="http://www.facebook.com/raz">Facebook</a></li>
+              <li>I'm currently hacking on a <a href="http://gfx.rasmuzen.com">3d multiplayer game</a> for the browser</li>
+              <li>I studied Software Engineering at the University of Waterloo for ~4 years, did not complete my degree, and do not intend on doing so</li>
+              <li>I've lived (and worked) in San Diego CA, Mountain View CA, Seattle WA, New York NY, Waterloo ON, and London ON</li>
             </ul>
           </div>
-          <h3>Work experience</h3>
-          <div>
-            <p>I've had six software development internships</p>
+          <div id="work-experience">
+            <h2>Work Experience</h2>
+            <p>I've had seven software engineering internships</p>
             <ul>
-              <li>Facebook (Menlo Park, CA): May-Aug 2012</li>
-              <li>Digital Extremes (London, ON): Sep-Dec 2011</li>
-              <li>Morgan Stanley (New York, NY): Jan-Apr 2011</li>
-              <li>Qualcomm (San Diego, CA): May-Aug 2010</li>
-              <li>Microsoft (Seattle, WA): Jun-Aug 2008, Jun-Aug 2009</li>
+              <li>
+                <span class="company"><a href="http://www.facebook.com/raz">Facebook</a></span>
+                <span class="location">Seattle, WA</span>
+                <span class="dates">Jan-Apr 2013</span>
+                <span class="role">iOS Mobile Core</span>
+              </li>
+              <li>
+                <span class="company"><a href="http://www.facebook.com/raz">Facebook</a></span>
+                <span class="location">Menlo Park, CA</span>
+                <span class="dates">May-Aug 2012</span>
+                <span class="role">Core Photos</span>
+              </li>
+              <li>
+                <span class="company"><a href="http://www.digitalextremes.com">Digital Extremes</a></span>
+                <span class="location">London, ON</span>
+                <span class="dates">Sep-Dec 2011</span>
+                <span class="role">Star Trek Gameplay Programmer</span>
+              </li>
+              <li>
+                <span class="company"><a href="http://www.morganstanley.com">Morgan Stanley</a></span>
+                <span class="location">New York, NY</span>
+                <span class="dates">Jan-Apr 2011</span>
+                <span class="role">Electronic Trading Infrastructure</span>
+              </li>
+              <li>
+                <span class="company"><a href="http://www.qualcomm.com">Qualcomm</a></span>
+                <span class="location">San Diego, CA</span>
+                <span class="dates">May-Aug 2010</span>
+                <span class="role">QDSP6 Audio Test</span>
+              </li>
+              <li>
+                <span class="company"><a href="http://www.microsoft.com">Microsoft</a></span>
+                <span class="location">Redmond, WA</span>
+                <span class="dates">Jun-Aug 2009</span>
+                <span class="role">Globalization for Visual Studio 2010</span>
+              </li>
+              <li>
+                <span class="company"><a href="http://www.microsoft.com">Microsoft</a></span>
+                <span class="location">Redmond, WA</span>
+                <span class="dates">Jun-Aug 2008</span>
+                <span class="role">Windows Embedded for Point of Service</span>
+              </li>
             </ul>
-            <p>I've done some consulting too!</p>
+            <p>I've also done some freelance work</p>
             <ul>
-              <li>Tungsten Property (New York, NY): Dec 2011 to current</li>
+              <li>
+                <span class="company"><a href="http://tungstenproperty.com">Tungsten Property</a></span>
+                <span class="location">Remote</span>
+                <span class="dates">Dec 2011 to present</span>
+                <span class="role">Web Developer</span>
+              </li>
             </ul>
           </div>
-          <h3>Stuff I've built</h3>
-          <div>
-            <div id="tabs">
-              <ul>
-                <li><a href="#tab1">Tungsten Property</a></li>
-                <li><a href="#tab2">Chess AI Site</a></li>
-                <li><a href="#tab3">3D OpenGL Demo</a></li>
-                <li><a href="#tab4">Tri Grid Viewer</a></li>
-                <li><a href="#tab5">Rasmuzen</a></li>
-              </ul>
-              <div id="tab1">
-                <p>I single-handedly developed and launched Tungsten Property's <a href="http://www.tungstenproperty.com">current site</a> using ec2/LAMP. I still maintain the site and work on new features when I have time to.</p>
+          <div id="side-projects">
+            <h2>Stuff I've Built</h2>
+            <ul>
+              <li>
+                <h3><a href="http://gfx.rasmuzen.com">WebGL Research</a></h3>
+                <p>I'm currently working on a <a href="http://gfx.rasmuzen.com">3d multiplayer game</a> for the browser using WebGL, Node.JS, and Socket.IO. At this point, the main purpose of the project is to see if a MMO game is even plausible in the browser with current tech.</p>
+                <a href="http://gfx.rasmuzen.com"><img src="/img/gfx.png" alt="gfx" /></a>
+              </li>
+              <li>
+                <h3><a href="http://tungstenproperty.com">Tungsten Property</a></h3>
+                <p>I single-handedly developed and launched Tungsten Property's <a href="http://www.tungstenproperty.com">current site</a> using LAMP on EC2. I still maintain the site and work on new features when I have time to.</p>
                 <a href="http://www.tungstenproperty.com"><img src="/img/tungsten.png" alt="tungsten" /></a>
-              </div>
-              <div id="tab2">
-                <p>I'm currently working on a website which would allow users to upload their chess algorithm to see how it does against other users' chess algorithms and watch the games live online. The website is written in PHP using CodeIgniter and the service running the algorithms is written in C++. PHP scripts communicate with the C++ service via Thrift.</p>
-                <img src="/img/chess.png" alt="chess" />
-              </div>
-              <div id="tab3">
-                <p>Having played a ton of video games as a kid, I got a pretty deep interest in computer graphics when I got to school. I tried using game engines such as OGRE and Unity but ended up finding it much more interesting to work directly with OpenGL. The project shown lets the user, a beautiful cube, walk around a heightmap terrain with all the associated physics/collision detection. Written from scratch using C++ and modern OpenGL with shaders.</p>
-                <img src="/img/graphics.jpg" alt="graphics" />
-              </div>
-              <div id="tab4">
+              </li>
+              <li>
+                <h3><a href="http://trigrid.rasmuzen.com">Tri Grid Viewer</a></h3>
                 <p>This project is super small, but was a really fun take-home interview assignment! As you can see from the image below, I can easily enjoy blowing a lot of time using this app.</p>
-                <p>Try it out <a href="http://trigrid.rasmuzen.com">here</a>!</p>
                 <a href="http://trigrid.rasmuzen.com"><img src="/img/trigrid.png" alt="trigrid" /></a>
-              </div>
-              <div id="tab5">
-                <p>Rasmuzen is this actual site that you're on right now. I enjoy creating an online identity for myself by keeping a graphical collection of my past/current projects and providing links to many other websites that I spend a lot of time on.</p>
-                <p>As you can see it's not the prettiest right now and still has a long way to go!</p>
-              </div>
-            </div>
+              </li>
+              <li>
+                <h3><a href="http://www.rasmuzen.com">Rasmuzen</a></h3>
+                <p>I built and maintain this site and am planning on making it prettier and writing a blog someday.</p>
+              </li>
+            </ul>
           </div>
         </div>
-
 <?php require_once('../views/footer.php'); ?>

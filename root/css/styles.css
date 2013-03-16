@@ -1,28 +1,38 @@
+* {
+  font: 12px verdana;
+}
+
+#nav a,
+#content a {
+  font: 12px verdana;
+  color: #000;
+}
+
+#nav a:hover,
+#content a:hover {
+  color: #56f;
+}
+
 #center {
   margin: 0 auto;
-  padding: 20px;
-  width: 1000px;
+  padding: 20px 0;
+  width: 682px;
 }
 
 #left {
-  width: 150px;
   float: left;
-}
-
-#profile {
+  position: fixed;
   width: 150px;
 }
 
 #profile img {
-  width: 150px;
-}
-
-#nav {
+  border: 1px solid #fff;
+  border-radius: 5px;
   width: 150px;
 }
 
 #nav ul li {
-  background: #cdf;
+  background: #eee;
   border: 1px solid #777;
   border-radius: 5px;
   float: left;
@@ -34,13 +44,8 @@
 }
 
 #nav ul li a {
-  color: #000;
   display: inline-block;
   text-decoration: none;
-}
-
-#nav ul li a:hover {
-  color: #fff;
 }
 
 #nav ul li a span.navSite {
@@ -53,45 +58,72 @@
 }
 
 #content {
+  background: #eee;
+  border: 1px solid #777;
+  border-radius: 5px;
   float: right;
-  padding: 0 20px;
-  width: 810px;
-}
-
-#content h1 {
-  font: 18px verdana;
-}
-
-#content h2 {
   font: 12px verdana;
+  margin-left: 10px;
+  padding: 10px;
+  width: 500px;
+}
+
+#top {
+  height: 36px;
+}
+
+#top h1 {
+  font: 20px verdana;
+}
+
+#top a {
+  float: left;
+  margin-right: 5px;
+}
+
+#bottom {
+  clear: both;
+}
+
+#bottom h2 {
+  font: 16px verdana;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+#bottom > div {
+  margin-top: 15px;
+}
+
+#bottom ul {
   margin-bottom: 10px;
 }
 
-#content ul {
-  margin-bottom: 10px;
-}
-
-#content ul li {
-  font: 12px verdana;
+#bottom ul li {
   list-style-type: disc;
   margin-left: 20px;
   margin-top: 5px;
+  width: 480px;
 }
 
-#content #tabs ul li {
-  list-style-type: none;
-  margin-left: 1px;
+
+#work-experience .company {
+  display: inline-block;
 }
 
-#content ul li img {
-  margin-top: 2px;
+#work-experience .company:after {
+  content: ":"
 }
 
-#content ul li li {
-  list-style-type: square;
-}
-
-#footer {
+#work-experience .dates {
   float: right;
-  width: 650px;
+}
+
+#work-experience .role {
+  display: block;
+  margin-left: 20px;
+}
+
+#side-projects img {
+  width: 100%;
 }

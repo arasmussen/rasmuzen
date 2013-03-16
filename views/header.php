@@ -16,7 +16,7 @@
     <div id="center">
       <div id="left">
         <div id="profile">
-          <img src="/img/andrew.png" alt="andrew" />
+          <a href="http://www.rasmuzen.com"><img src="/img/andrew.png" alt="andrew" /></a>
         </div>
         <div id="nav">
           <ul>
@@ -31,7 +31,7 @@ $domains = array(
   'resume' => 'http://www.rasmuzen.com'
 );
 $profiles = array(
-  'facebook' => '/rasmussen.andrew',
+  'facebook' => '/raz',
   'stackoverflow' => '/users/710360/arasmussen',
   'linkedin' => '/pub/andrew-rasmussen/18/95/21b',
   'twitter' => '/rasmuzen',
