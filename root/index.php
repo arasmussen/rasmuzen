@@ -34,7 +34,7 @@
                 <span class="company"><a href="http://www.digitalextremes.com">Digital Extremes</a></span>
                 <span class="location">London, ON</span>
                 <span class="dates">Sep-Dec 2011</span>
-                <span class="role">Star Trek Gameplay Programmer</span>
+                <span class="role">Star Trek Gameplay</span>
               </li>
               <li>
                 <span class="company"><a href="http://www.morganstanley.com">Morgan Stanley</a></span>
@@ -81,7 +81,7 @@
               </li>
               <li>
                 <h3><a href="http://tungstenproperty.com">Tungsten Property</a></h3>
-                <p>I single-handedly developed and launched Tungsten Property's <a href="http://www.tungstenproperty.com">current site</a> using LAMP on EC2. I still maintain the site and work on new features when I have time to.</p>
+                <p>I developed and launched Tungsten Property's <a href="http://www.tungstenproperty.com">website</a> using LAMP on EC2. I still maintain the site.</p>
                 <a href="http://www.tungstenproperty.com"><img src="/img/tungsten.png" alt="tungsten" /></a>
               </li>
               <li>
