@@ -87,6 +87,15 @@ requirejs([
         return;
       }
 
+      var checkFilename = fs.existsSync(filepath) ? filepath : (fs.existsSync(filepath + '.html') ? filepath + '.html' : filepath + '.html.ejs');
+      var checkFile = fs.realpathSync(checkFilename);
+      var rootDir = fs.realpathSync(__dirname + '/../root');
+      if (!(checkFile.indexOf(rootDir) == 0)) {
+        response.writeHead(404);
+        response.end();
+        return;
+      }
+
       // otherwise just serve that file. this is probably a huge security issue
       // (for example if the user somehow requests http://venz.io/../../../../../etc/passwd)
       var extension = getExtension(url);
