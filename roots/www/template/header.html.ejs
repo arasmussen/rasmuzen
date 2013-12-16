@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Andrew Rasmussen</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/smoothness/jquery-ui-1.9.0.custom.min.css" />
+    <link rel="stylesheet" href="/css/theme.css" />
+<% cssFiles.forEach(function(file) { %>
+    <link rel="stylesheet" href="/css/<%= file %>.css" />
+<% }); %>
+    <script src="/js/jquery-1.8.2.js"></script>
+    <script src="/js/jquery-ui-1.9.0.custom.min.js"></script>
+    <script src="/js/scripts.js"></script>
+    <script src="/js/rainbow-custom.min.js"></script>
+    <script src="/js/analytics.js"></script>
+  </head>
+  <body>
+    <div id="center">
+      <div id="left">
+        <div id="profile">
+          <a href="/"><img src="/img/andrew.png" alt="andrew" /></a>
+        </div>
+        <div id="nav">
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/raz">
+                <img class="navImg" src="/img/icons/facebook.png" alt="facebook icon" />
+                <span class="navSite">facebook</span>
+              </a>
+            </li>
+            <li>
+              <a href="http://stackoverflow.com/users/710360/arasmussen">
+                <img class="navImg" src="/img/icons/stackoverflow.png" alt="stackoverflow icon" />
+                <span class="navSite">stackoverflow</span>
+              </a>
+            </li>
+            <li>
+              <a href="http://linkedin.com/pub/andrew-rasmussen/18/95/21b">
+                <img class="navImg" src="/img/icons/linkedin.png" alt="linkedin icon" />
+                <span class="navSite">linkedin</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/rasmuzen">
+                <img class="navImg" src="/img/icons/twitter.png" alt="twitter icon" />
+                <span class="navSite">twitter</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/arasmussen">
+                <img class="navImg" src="/img/icons/github.png" alt="github icon" />
+                <span class="navSite">github</span>
+              </a>
+            </li>
+            <li>
+              <a href="/resume">
+                <img class="navImg" src="/img/icons/rasmuzen.png" alt="resume icon" />
+                <span class="navSite">resume</span>
+              </a>
+            </li>
+            <li>
+              <a href="http://venz.io">
+                <img class="navImg" src="/img/icons/venzio.png" alt="venzio icon" />
+                <span class="navSite">venzio</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="content">

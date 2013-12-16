@@ -1,0 +1,44 @@
+<h1>Getting MySQL to work on Cygwin</h1>
+<h2>Background</h2>
+<p>I am an avid user of Cygwin. I originally had mysql and apache services running on Windows, but then ran into many issues where the mysql package installed in Cygwin would not easily work with the mysqld service installed in Windows.</p>
+<p>I didn't want to settle on opening a separate native Windows command prompt every time I wanted to use mysql. I do everything I possibly can in Cygwin. I use vim and git and ssh into servers, all from cygwin. So why have another Windows command prompt open if I can get it to work in Cygwin?</p>
+<p>If I run the mysql command in Cygwin, I'll get the following error because the mysqld process is the Windows one, not the Cygwin one:</p>
+<pre><code data-language="shell">$ mysql
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysql.sock' (2)</code></pre>
+<p>If I try using the Windows executable from Cygwin, I believe it still works properly, but all of the output from mysql is lost, so I have no idea what's going on.</p>
+<h2>Cygwin Prerequisites</h2>
+<p>My solution to this whole fiasco is to download MySQL's generic linux source code and build it mysql in Cygwin. I've used Cygwin for a lot of things, so I'm not entirely sure which specific Cygwin packages are necessary for this, but you'll definitely need the following: gcc or g++ (not sure which), make, cmake, libedit, and readline</p>
+<h2>Getting the source</h2>
+<p>After setting up Cygwin, you'll have to get the MySQL generic linux source code, <a href="http://dev.mysql.com/downloads/mysql/#downloads">here</a>. On that page, select generic source, and then download the tarball (.tar.gz) towards the bottom.</p>
+<p>After you've downloaded it, I moved it to my Cygwin home directory with Cygwin and extracted it:</p>
+<pre><code data-language="shell">cd
+mv /cygdrive/c/users/andrew/downloads/mysql-5.5.28.tar.gz .
+tar -zxvf mysql-5.5.28.tar.gz</code></pre>
+<p>Obviously your username is different, and you may be downloading a later version of MySQL so change the above accordingly. You should now have the unextracted version of the source in your home directory.</p>
+<h2>Building MySQL</h2>
+<p>So this part's a little silly. I guess there's some issue between the "dtoa" function that is defined in mysql-5.5.28/strings/dtoa.c where it is already defined on the Windows system. I don't believe Linux users have this issue. So the only place this function is referenced is in this file, so simply renaming the declaration, definition, and all calls in that file from dtoa to _dtoa (or anything really) will fix this issue.</p>
+<p>I was able to fix the entire file it two quick vim search and replaces:</p>
+<pre><code data-language="shell">:%s/\*dtoa(/\*_dtoa(/g
+:%s/ dtoa(/ _dtoa(/g</code></pre>
+<p>Now that we've fixed the code, go ahead and configure the build, build it, and install it with the following:</p>
+<pre><code data-language="shell">cd ~/mysql-5.5.28
+cmake .
+make
+make install</code></pre>
+<p>This should take roughly 5-10 minutes. MySQL should now be installed to /usr/local/mysql.</p>
+<h2>Install system tables</h2>
+<p>So if you try to start mysqld right away, it'll complain with the following:</p>
+<pre><code data-language="shell">/usr/local/mysql/bin/mysqld: Table 'mysql.plugin' doesn't exist</code></pre>
+<p>You need to install the MySQL system tables by running the mysql_install_db script. This is located in /usr/local/mysql/scripts.
+</p>
+<pre><code data-language="shell">cd /usr/local/mysql
+scripts/mysql_install_db</code></pre>
+<p>You now are ready to start your server daemon! Exciting stuff.</p>
+<h2>Windows Service</h2>
+<p>You probably want mysqld to start as a Windows service when you boot up Windows so that you don't have to start the daemon manually every time. I do at least. You can achieve this by opening up a Windows Command Prompt (run as administrator) and running the following command:</p>
+<pre><code data-language="shell">C:\cygwin\bin\cygrunsrv -I cygmysql -p /usr/local/mysql/bin/mysqld</code></pre>
+<p>This tells Windows that when it boots up, start the service "cygmysql" which basically calls on a Cygwin executable to start the mysqld Cygwin executable. You cannot run the Cygwin executable from outside of Cygwin because it'll complain that you "cygwin1.dll is missing from your computer".</p>
+<p>Then go ahead and open up services (Start Menu -&gt; All Programs -&gt; Administrative Tools -&gt; Services), find cygmysql, and start it. This will start up mysqld. You can set it to automatic or manual as preferred if you'd like to start mysqld yourself or have it start with Windows.</p>
+<h2>Alias</h2>
+<p>In order to be able to type "mysql" in Cygwin, and have it use /usr/local/mysql/bin/mysql rather than the previously installed /usr/bin/mysql, I simply aliased it in my ~/.bashrc file:</p>
+<pre><code data-language="shell">alias mysql="/usr/local/mysql/bin/mysql"</code></pre>
