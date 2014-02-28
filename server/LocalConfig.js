@@ -3,6 +3,6 @@
 define(function() {
   return {
     // 'dev' or 'prod'
-    environment: 'prod',
+    environment: 'dev',
   }
 });
