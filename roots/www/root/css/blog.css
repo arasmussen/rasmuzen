@@ -1,0 +1,36 @@
+p {
+  margin-top: 14px;
+  line-height: 20px;
+}
+
+#bitstamp_message {
+  margin-top: 11px;
+  width: 550px;
+}
+
+h2 {
+  font-size: 16px;
+}
+
+#blog_date {
+  font-size: 10px;
+  margin-top: 0;
+}
+
+#blog_note,
+#blog_note a {
+  font-style:italic;
+  color: #777;
+  font-size: 12px;
+}
+
+h3 {
+  border-top: 1px solid #777;
+  padding-top: 20px;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.bold {
+  font-weight:bold;
+}

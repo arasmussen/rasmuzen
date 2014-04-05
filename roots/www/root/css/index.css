@@ -1,10 +1,10 @@
 * {
-  font: 12px verdana;
+  font: 13px verdana;
 }
 
 #nav a,
 #content a {
-  font: 12px verdana;
+  font: 13px verdana;
   color: #000;
 }
 
@@ -16,7 +16,7 @@
 #center {
   margin: 0 auto;
   padding: 20px 0;
-  width: 682px;
+  width: 732px;
 }
 
 #left {
@@ -49,7 +49,7 @@
 }
 
 #nav ul li a span.navSite {
-  font: 12px verdana;
+  font: 13px verdana;
 }
 
 #nav ul li img.navImg {
@@ -58,41 +58,45 @@
 }
 
 #content {
-  background: #eee;
-  border: 1px solid #777;
-  border-radius: 5px;
   float: right;
-  font: 12px verdana;
+  font: 13px verdana;
+  margin-bottom: 100px;
   margin-left: 10px;
-  padding: 10px;
-  width: 500px;
 }
 
 #top {
   height: 36px;
+  background-color: #eee;
+  border-radius: 5px;
+  border: 1px solid #777;
+  padding: 10px 10px 14px 10px;
+  margin-bottom: 10px;
+  width: 550px;
 }
 
-#top h1 {
+#top h1 a {
   font: 20px verdana;
+  display: block;
+  text-decoration: none;
 }
 
 #top a {
-  float: left;
   margin-right: 5px;
 }
 
 #bottom {
   clear: both;
+  background: #eee;
+  border: 1px solid #777;
+  border-radius: 5px;
+  padding: 10px;
+  width: 550px;
 }
 
 #bottom h2 {
   font: 16px verdana;
   font-weight: bold;
   margin-bottom: 3px;
-}
-
-#bottom > div {
-  margin-top: 15px;
 }
 
 #bottom ul {
@@ -103,7 +107,7 @@
   list-style-type: disc;
   margin-left: 20px;
   margin-top: 5px;
-  width: 480px;
+  width: 530px;
 }
 
 

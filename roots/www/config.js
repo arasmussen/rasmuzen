@@ -12,6 +12,7 @@ define([
       },
 
       cssFiles: {
+        '/bitstamp': ['index', 'blog'],
         '/index': ['index']
       },
 
