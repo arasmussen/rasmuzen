@@ -131,3 +131,9 @@
 #side-projects img {
   width: 100%;
 }
+
+@media only screen and (max-device-width : 480px) {
+  #left {
+    display: none;
+  }
+}
