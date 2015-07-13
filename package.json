@@ -17,5 +17,11 @@
     "venzio"
   ],
   "author": "Andrew Rasmussen",
-  "license": "Public Domain"
+  "license": "Public Domain",
+  "dependencies": {
+    "fs": "0.0.2",
+    "multiparty": "^4.1.2",
+    "querystring": "^0.2.0",
+    "url": "^0.10.3"
+  }
 }

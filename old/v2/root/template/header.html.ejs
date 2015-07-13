@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Andrew Rasmussen</title>
+    <meta charset="UTF-8">
+<% globalFiles.css.forEach(function(file) { %>
+    <link rel="stylesheet" href="/css/<%= file %>.css" />
+<% }); %>
+<% pageSpecificFiles.css.forEach(function(file) { %>
+    <link rel="stylesheet" href="/css/<%= file %>.css" />
+<% }); %>
+<% globalFiles.js.forEach(function(file) { %>
+    <script type="text/javascript" src="/js/<%= file %>.js"></script>
+<% }); %>
+<% pageSpecificFiles.js.forEach(function(file) { %>
+    <script type="text/javascript" src="/js/<%= file %>.js"></script>
+<% }); %>
+  </head>
+  <body>
